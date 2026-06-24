@@ -1,0 +1,498 @@
+{
+  "users": [
+    {
+      "id": "usr_admin",
+      "bookmarks": [
+        "paper_1",
+        "paper_3",
+        "paper_ba6wub74g"
+      ],
+      "createdAt": "2026-06-23T16:13:27.472Z",
+      "downloads": [
+        {
+          "paperId": "paper_1",
+          "downloadedAt": "2026-06-23T16:13:27.472Z",
+          "orderId": "ORD-93021",
+          "price": 0
+        }
+      ],
+      "email": "admin@archive.org",
+      "isBlocked": false,
+      "name": "System Administrator",
+      "passwordHash": "719f880e2e25edaf4c308bb0059236ead17c1356cf06138fb012b0509a5f1eb7a0965d2b1e3b1da89fa1566d5d560c966e615cccd869f028cbd12093bcf82d53",
+      "role": "admin"
+    },
+    {
+      "id": "usr_demo",
+      "bookmarks": [
+        "paper_2"
+      ],
+      "createdAt": "2026-06-23T16:13:27.472Z",
+      "downloads": [
+        {
+          "paperId": "paper_1",
+          "downloadedAt": "2026-06-22T16:13:27.472Z",
+          "orderId": "ORD-12344",
+          "price": 0
+        },
+        {
+          "paperId": "paper_2",
+          "downloadedAt": "2026-06-23T16:13:27.472Z",
+          "orderId": "ORD-88401",
+          "price": 19.99
+        }
+      ],
+      "email": "researcher@example.com",
+      "isBlocked": false,
+      "name": "Alex Mercer",
+      "passwordHash": "20a8c633f6f7ebb817148e66e33dcd3f01526200c4376e172694f31161be74877676aa81f550721bb0df8c9d54a887dc5e28d1f32e57e1e1cdf720325060a84d",
+      "role": "user"
+    },
+    {
+      "id": "usr_editor",
+      "bookmarks": [],
+      "createdAt": "2026-06-23T16:13:27.473Z",
+      "downloads": [],
+      "email": "editor@archive.org",
+      "isBlocked": false,
+      "name": "Clara Oswald",
+      "passwordHash": "94a9677d45fb5528e23c64adda76a39c4401ab507b3a6ab8fe67e30d1bbf70bfe63170339b0cf40ed5b968e9741f96ba5c2ed0c95874b8020a120c604361f00c",
+      "role": "editor"
+    },
+    {
+      "id": "usr_jvksdms14",
+      "bookmarks": [],
+      "createdAt": "2026-06-23T19:03:35.108Z",
+      "downloads": [],
+      "email": "rifat@gmail.com",
+      "isBlocked": false,
+      "name": "Md Rifat Hossain",
+      "passwordHash": "d139a45f3d8ff673c43fd2df2bc43761ead85636d5169475f22e550eb19f03c451741b602edcac3e11df10553ddf451c27cf1e6b830b03afc21cb7af72b2e938",
+      "role": "student",
+      "resetCode": "154182"
+    },
+    {
+      "id": "usr_d019uld6i",
+      "bookmarks": [],
+      "createdAt": "2026-06-23T19:15:08.948Z",
+      "downloads": [],
+      "email": "arpita@gmail.com",
+      "isBlocked": false,
+      "name": "Arpita Saha Chaity",
+      "passwordHash": "d139a45f3d8ff673c43fd2df2bc43761ead85636d5169475f22e550eb19f03c451741b602edcac3e11df10553ddf451c27cf1e6b830b03afc21cb7af72b2e938",
+      "role": "student"
+    }
+  ],
+  "papers": [
+    {
+      "id": "paper_1",
+      "authors": [
+        "Elena Rostova",
+        "Li Wei",
+        "Jan de Vries"
+      ],
+      "categories": [
+        "Artificial Intelligence"
+      ],
+      "coverImage": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&auto=format&fit=crop&q=80",
+      "createdAt": "2025-11-12T08:00:00.000Z",
+      "downloadsCount": 145,
+      "fileUrl": "/sample-papers/swarm_intelligence_navigation.pdf",
+      "likes": 312,
+      "pages": 14,
+      "price": 0,
+      "researcherId": "res_elena",
+      "status": "Active",
+      "summary": "This paper presents an unsupervised routing model for airborne robot swarms. By employing a localized graph neural net, swarms can adaptively map obstacle fields and retain robust connectivity without centralized coordination.",
+      "title": "Swarm Intelligence in Unsupervised Autonomous Navigation Pathing",
+      "views": 1246,
+      "year": 2025
+    },
+    {
+      "id": "paper_2",
+      "authors": [
+        "Marcus Thorne",
+        "Sophia Al-Jamil"
+      ],
+      "categories": [
+        "Quantum Computing"
+      ],
+      "coverImage": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=600&auto=format&fit=crop&q=80",
+      "createdAt": "2026-02-18T10:30:00.000Z",
+      "downloadsCount": 88,
+      "fileUrl": "/sample-papers/fault_tolerant_qubits.pdf",
+      "likes": 211,
+      "pages": 22,
+      "price": 19.99,
+      "researcherId": "res_marcus",
+      "status": "Active",
+      "summary": "We demonstrate a topological protection protocol optimizing fault-tolerance on heavy-hex layouts. Our experimental circuit demonstrates error margins below the threshold necessary for practical scale-up architectures.",
+      "title": "Fault-Tolerant Logical Qubits via High-Density Surface Codes",
+      "views": 890,
+      "year": 2026
+    },
+    {
+      "id": "paper_3",
+      "authors": [
+        "Siddharth Mehta",
+        "Emily Carter"
+      ],
+      "categories": [
+        "Bioinformatics",
+        "Artificial Intelligence"
+      ],
+      "coverImage": "https://images.unsplash.com/photo-1530026405186-ed1eaae6bbdb?w=600&auto=format&fit=crop&q=80",
+      "createdAt": "2024-08-05T14:15:00.000Z",
+      "downloadsCount": 212,
+      "fileUrl": "/sample-papers/transformer_metagenomic_reads.pdf",
+      "likes": 405,
+      "pages": 12,
+      "price": 0,
+      "researcherId": "res_siddharth",
+      "status": "Active",
+      "summary": "Metagenomics sequences often present highly disjoint sequences. We detail a custom local cross-attention decoder model trained to predict positional overlap across species without rigid reference schemas.",
+      "title": "Transformer-based Alignment of Heterogeneous Metagenomic Reads",
+      "views": 1420,
+      "year": 2024
+    },
+    {
+      "id": "paper_4",
+      "authors": [
+        "Marcus Thorne",
+        "Elena Rostova"
+      ],
+      "categories": [
+        "Cybersecurity",
+        "Artificial Intelligence"
+      ],
+      "coverImage": "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=600&auto=format&fit=crop&q=80",
+      "createdAt": "2025-05-20T09:40:00.000Z",
+      "downloadsCount": 54,
+      "fileUrl": "/sample-papers/trust_anchors_computing.pdf",
+      "likes": 182,
+      "pages": 16,
+      "price": 24.5,
+      "researcherId": "res_marcus",
+      "status": "Active",
+      "summary": "This work investigates the union of autonomous machine swarms and decentralized ledgers. We offer cryptographic proof for zero-knowledge validation of path state updates without degrading live computational cycles.",
+      "title": "Trust Anchors in Distributed Collaborative Computing Frameworks",
+      "views": 957,
+      "year": 2025
+    },
+    {
+      "id": "paper_ba6wub74g",
+      "authors": [
+        "Nakib Aman Turzo",
+        "Md. Rabiul Islam",
+        "Md Faysal Ahamed"
+      ],
+      "categories": [
+        "Artificial Intelligence"
+      ],
+      "coverImage": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&auto=format&fit=crop&q=80",
+      "createdAt": "2026-06-23T19:01:34.899Z",
+      "downloadsCount": 0,
+      "fileUrl": "/uploads/xs1shhdf_Performance_Evaluation_of_Various_Deep_Learning_Mo.pdf",
+      "likes": 0,
+      "pages": 12,
+      "price": 0,
+      "researcherId": "res_1qgpe8qls",
+      "status": "Active",
+      "summary": "Human gait recognition (HGR) has been employed as a biometric technique for security\npurposes over the last decade. Various factors, including clothing, carrying items, and walking\nsurfaces, can influence the performance of gait recognition. Additionally, identifying individuals\nfrom different viewpoints presents a significant challenge in HGR. Numerous conventional and deep\nlearning techniques have been introduced in the literature for HGR, but traditional methods are not\nwell suited to handling large datasets. This research explores the effectiveness of four deep learning\nmodels for gait identification in the CASIA B dataset: the convolutional neural network (CNN), multilayer perceptron (MLP), self-organizing map (SOMs), and transfer learning with EfficientNet. The\nselected deep learning techniques offer robust feature extraction and the efficient handling of large\ndatasets, making them ideal in enhancing the accuracy of gait recognition. The collection includes gait\nsequences from 10 individuals, with a total of 92,596 images that have been reduced to 64 × 64 pixels\nfor uniformity. A modified model was developed by integrating sequential convolutional layers for\ndetailed spatial feature extraction, followed by dense layers for classification, optimized through\nrigorous hyperparameter tuning and regularization techniques, resulting in an accuracy of 97.12%\nfor the test set. This work enhances our understanding of deep learning methods in gait analysis,\noffering significant insights for choosing optimal models in security and surveillance applications.",
+      "title": "Performance Evaluation of Various Deep Learning Models in Gait Recognition Using the CASIA-B Dataset",
+      "views": 1,
+      "year": 2026
+    },
+    {
+      "id": "paper_akw8k78i7",
+      "authors": [
+        "Md Rifat Hossain",
+        "Md Nayeem Hossain",
+        "Nakib Aman Turzo",
+        "Arpita Saha Chaity"
+      ],
+      "categories": [
+        "Artificial Intelligence"
+      ],
+      "coverImage": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&auto=format&fit=crop&q=80",
+      "createdAt": "2026-06-23T19:09:14.563Z",
+      "downloadsCount": 0,
+      "fileUrl": "/uploads/fn6aib4b_69.pdf",
+      "likes": 0,
+      "pages": 12,
+      "price": 0,
+      "researcherId": "res_1qgpe8qls",
+      "status": "Active",
+      "summary": "Road traffic accidents remain a significant public safety issue in Bangladesh, causing high mortality rates and economic losses.With high death and economic tolls. While measures have been taken to make roads safer, the rise in the number of cars on the road coupled with the lack of proper infrastructure is aiding accidents.The aim of this study is to predict the severity of road traffic accident based on machine learning methods namely LightGBM and SHAP in Bangladesh. The purpose of this study is to find out the number and type of factors which different low and normal severity incidents from fatal incidents have, and to find out how the identified factors can be used for traffic safety improvement. This study has employed a data set on the occurrence of road traffic accidents using FIR data from three districts of Rajshahi, Natore and Pabna in Bangladesh. Data were carefully preprocessed, with missing values addressed and data normalized. The LightGBM model was applied to classify the severity of accidents and SHAP was applied to understand how the individual features contributed to the model's prediction. The LightGBM model shows great performance, with an AUC of 0.87 for fatal and low/normal severity classes. Type of collision, vehicle type, vulnerable road users and environmental conditions turned out to be the most prominent factors affecting the severity.Overall, the study highlights the potential of machine learning in predictive modeling for improving road safety. These findings can help policy makers prioritize the interventions that are needed for safety, by focusing on the factors that are most likely to lead to death, thus minimizing the number of lives lost on the roads in Bangladesh.",
+      "title": "Road Accident Severity Prediction in Bangladesh Using Explainable LightGBM",
+      "views": 2,
+      "year": 2026
+    },
+    {
+      "id": "paper_j0p001323",
+      "authors": [
+        "Arpita Saha Chaity"
+      ],
+      "categories": [
+        "Quantum Computing"
+      ],
+      "coverImage": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&auto=format&fit=crop&q=80",
+      "createdAt": "2026-06-23T19:20:50.999Z",
+      "downloadsCount": 0,
+      "fileUrl": "/uploads/6k8xaucu_DEEPLEARNING-BASEDCLASSIFICATIONOFURBANTRANSPORTMODECHOICEFORURBANPLANNING.pdf",
+      "likes": 0,
+      "pages": 12,
+      "price": 0,
+      "researcherId": "res_1is48rmy1",
+      "status": "Active",
+      "summary": "Road traffic accidents remain a significant public safety issue in Bangladesh, causing high mortality rates and economic losses.With high death and economic tolls. While measures have been taken to make roads safer, the rise in the number of cars on the road coupled with the lack of proper infrastructure is aiding accidents.The aim of this study is to predict the severity of road traffic accident based on machine learning methods namely LightGBM and SHAP in Bangladesh. The purpose of this study is to find out the number and type of factors which different low and normal severity incidents from fatal incidents have, and to find out how the identified factors can be used for traffic safety improvement. This study has employed a data set on the occurrence of road traffic accidents using FIR data from three districts of Rajshahi, Natore and Pabna in Bangladesh. Data were carefully preprocessed, with missing values addressed and data normalized. The LightGBM model was applied to classify the severity of accidents and SHAP was applied to understand how the individual features contributed to the model's prediction. The LightGBM model shows great performance, with an AUC of 0.87 for fatal and low/normal severity classes. Type of collision, vehicle type, vulnerable road users and environmental conditions turned out to be the most prominent factors affecting the severity.Overall, the study highlights the potential of machine learning in predictive modeling for improving road safety. These findings can help policy makers prioritize the interventions that are needed for safety, by focusing on the factors that are most likely to lead to death, thus minimizing the number of lives lost on the roads in Bangladesh.",
+      "title": "Hybrid QNN in CIFAR 10 Dataset",
+      "views": 2,
+      "year": 2026
+    }
+  ],
+  "topics": [
+    {
+      "id": "topic_ai",
+      "description": "Machine learning, neural networks, computer vision, and cognitive systems research.",
+      "name": "Artificial Intelligence",
+      "paperCount": 5
+    },
+    {
+      "id": "topic_quantum",
+      "description": "Quantum algorithms, error correction, hardware engineering, and quantum cryptography.",
+      "name": "Quantum Computing",
+      "paperCount": 2
+    },
+    {
+      "id": "topic_bioinfo",
+      "description": "Computational genomics, structural biology, and algorithmic systems for molecular analysis.",
+      "name": "Bioinformatics",
+      "paperCount": 1
+    },
+    {
+      "id": "topic_hci",
+      "description": "Interaction design, virtual and augmented reality, collaborative interfaces, and accessibility.",
+      "name": "Human-Computer Interaction",
+      "paperCount": 0
+    },
+    {
+      "id": "topic_sec",
+      "description": "Network security, cryptography, intrusion detection, and trust architectures.",
+      "name": "Cybersecurity",
+      "paperCount": 1
+    }
+  ],
+  "researchers": [
+    {
+      "id": "res_elena",
+      "affiliation": "Institute of Advanced Learning, Zurich",
+      "bio": "Elena specializes in neural architecture search and deep reinforcement learning applied to swarm robotics. Over 12 years of research, she has driven multiple international smart-agent programs.",
+      "email": "e.rostova@ial.ch",
+      "name": "Dr. Elena Rostova",
+      "paperCount": 1,
+      "position": "Associate Professor of AI",
+      "profilePhoto": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80",
+      "website": "https://example.edu/erostova"
+    },
+    {
+      "id": "res_marcus",
+      "affiliation": "Pacific Quantum Laboratory, Vancouver",
+      "bio": "Marcus has been pioneering high-coherence physical qubits and error-resilient logical circuit architectures for over two decades. He coordinates public-private quantum networks.",
+      "email": "m.thorne@pql.org",
+      "name": "Prof. Marcus Thorne",
+      "paperCount": 2,
+      "position": "Director of Systems Research",
+      "profilePhoto": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150&auto=format&fit=crop&q=80",
+      "website": "https://example.edu/mthorne"
+    },
+    {
+      "id": "res_siddharth",
+      "affiliation": "Stanford Bio-Science Center",
+      "bio": "Siddharth develops sequence alignment heuristics and deep models for predicting protein folding shapes. He focuses on scalable distributed bioinformatics platforms.",
+      "email": "smehta@stanford.edu",
+      "name": "Dr. Siddharth Mehta",
+      "paperCount": 1,
+      "position": "Senior Researcher in Genomics",
+      "profilePhoto": "https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=150&auto=format&fit=crop&q=80",
+      "website": "https://example.edu/smehta"
+    },
+    {
+      "id": "res_1qgpe8qls",
+      "affiliation": "Pabna Science and Technology University",
+      "bio": "Biometrics, Machine Learning, Internet of Things",
+      "email": "nakib@gmail.com",
+      "name": "Nakib Aman Turzo",
+      "paperCount": 2,
+      "position": "Lecturer",
+      "profilePhoto": "https://i1.rgstatic.net/ii/profile.image/918202112552960-1595927851445_Q128/Nakib-Turzo.jpg",
+      "userId": "usr_admin",
+      "website": "https://www.researchgate.net/profile/Nakib-Turzo"
+    },
+    {
+      "id": "res_1is48rmy1",
+      "affiliation": "Pabna University of Science and Technology",
+      "bio": "Machine Learning & Image Processing",
+      "email": "rifat@gmail.com",
+      "name": "Md Rifat Hossain",
+      "paperCount": 2,
+      "position": "Student",
+      "profilePhoto": "https://scontent.fdac90-1.fna.fbcdn.net/v/t39.30808-6/622340451_2399601510502497_1542477265806471281_n.jpg?stp=dst-jpg_tt6&cstp=mx1393x1382&ctp=s206x206&_nc_cat=101&ccb=1-7&_nc_sid=fe5ecc&_nc_eui2=AeETXpAAEoNjuzm8eCT1bF5cvQYkIijXSL29BiQiKNdIvUGj-U_Pg604cIw1L8vAdRRd3DXuLp6vHibZzkcfA1kL&_nc_ohc=ER1SRYoAlaUQ7kNvwGXeI_O&_nc_oc=Adr404t4IHt99SOugvOhk2BEJ1Hh-utq_yflr7wvU9lLOQZXOWPOf8EatWYhMGvaB3Q&_nc_zt=23&_nc_ht=scontent.fdac90-1.fna&_nc_gid=jqxJUitd3kq6eUM_TjUBKg&_nc_ss=7b2a8&oh=00_Af8SeJYpDR7pC7O0SMvF3alot7KGECct3SckGrJuZ3kozA&oe=6A40A40A",
+      "userId": "usr_jvksdms14",
+      "website": "https://www.researchgate.net/profile/Md-Hossain-1604?ev=hdr_xprf"
+    },
+    {
+      "id": "res_4zswqb0h7",
+      "affiliation": "Pabna University Of Science and Technology",
+      "bio": "Signal Processing",
+      "email": "arpita@gmail.com",
+      "name": "Arpita Saha Chaity",
+      "paperCount": 2,
+      "position": "Student",
+      "profilePhoto": "https://scontent.fdac90-1.fna.fbcdn.net/v/t39.30808-6/672671501_1498171651964200_8681860414492743516_n.jpg?stp=dst-jpg_tt6&cstp=mx1536x2048&ctp=s1536x2048&_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEQr4-MsGuNCUujcoH9O46BNWXjFmzqb6I1ZeMWbOpvoqlRC1RJ2bY29c8C5A0xKnhCsDbv5d9RwMx7EugZ7BZA&_nc_ohc=xEQTn4msQDgQ7kNvwFz2hUt&_nc_oc=AdqYDHYo8lDmdxFhZ7qVd00NFDRl0OWiZwVcBcYDOdIM7lch3SSyv2gEqCBAOsgrTMY&_nc_zt=23&_nc_ht=scontent.fdac90-1.fna&_nc_gid=TvppnMIv0C_1fslwYVuYeA&_nc_ss=7b2a8&oh=00_Af-AInfwNu7gd2VbR7YO-7SdiGxdf8aGRyInxI47oBf_0g&oe=6A40AFB2",
+      "userId": "usr_d019uld6i",
+      "website": ""
+    }
+  ],
+  "tickets": [
+    {
+      "id": "tkt_1",
+      "createdAt": "2026-06-23T15:13:27.473Z",
+      "message": "I am trying to download 'Fault-Tolerant Logical Qubits' but the secure download link seems expired.",
+      "status": "open",
+      "subject": "PDF validation key timeout",
+      "userId": "usr_demo",
+      "userName": "Alex Mercer"
+    },
+    {
+      "id": "tkt_2",
+      "createdAt": "2026-06-21T16:13:27.473Z",
+      "message": "Could Elena Rostova link my user account to her researcher profile, please?",
+      "reply": "Yes, we can link your portfolio once you submit your credential files inside the dashboard.",
+      "status": "resolved",
+      "subject": "Onboarding as researcher request",
+      "userId": "usr_demo",
+      "userName": "Alex Mercer"
+    }
+  ],
+  "contactMessages": [
+    {
+      "id": "msg_1",
+      "createdAt": "2026-06-23T16:13:27.473Z",
+      "email": "janesmith@mit.edu",
+      "message": "Hello! We are looking to syndicate our lab publications with the index server. Who are the contact editors?",
+      "name": "Jane Smith",
+      "status": "open"
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq_1",
+      "answer": "You can download papers directly. Premium papers require a one-click demo enrollment/purchase simulation on the publication page. This will append the paper to your personal Downloads Dashboard, unlocking immediate secure PDF viewing and offline archives.",
+      "question": "How can I download a premium indexed publication?"
+    },
+    {
+      "id": "faq_2",
+      "answer": "Yes, download links are provisioned via secure temporary tokens. They invalidate dynamically to ensure copyrighted materials are not distributed outside the platform sandbox.",
+      "question": "Do download buttons have secure auto-expiry keys?"
+    },
+    {
+      "id": "faq_3",
+      "answer": "Only existing Administrators can elevate user profiles to Editor status. Editor profiles have capabilities to index, update and remove publications, while Super Admins can additionally block users and manage support lines.",
+      "question": "Can I register as a platform Editor, or Super Admin?"
+    },
+    {
+      "id": "faq_4",
+      "answer": "You can use either the built-in AI chatbot companion on the support page, or submit an official Support Ticket directly from your account page. Our editors will reply immediately.",
+      "question": "How do I request help if my downloads breakdown?"
+    }
+  ],
+  "branding": {
+    "allowRegistration": true,
+    "emailNotifications": true,
+    "footerText": "Research Archive Portal. All rights reserved.",
+    "logoUrl": "/logo.svg",
+    "siteName": "Research Archive",
+    "siteTagline": "Discover • Explore • Research",
+    "themeMode": "light"
+  },
+  "chats": [
+    {
+      "id": "msg_cd0tu00tt",
+      "createdAt": "2026-06-23T19:12:16.518Z",
+      "message": "hello",
+      "receiverId": "usr_jvksdms14",
+      "receiverName": "Md Rifat Hossain",
+      "receiverRole": "student",
+      "senderId": "usr_admin",
+      "senderName": "System Administrator",
+      "senderRole": "admin"
+    },
+    {
+      "id": "msg_4rnursgba",
+      "createdAt": "2026-06-23T19:12:35.125Z",
+      "message": "hi sir",
+      "receiverId": "usr_admin",
+      "receiverName": "System Administrator",
+      "receiverRole": "admin",
+      "senderId": "usr_jvksdms14",
+      "senderName": "Md Rifat Hossain",
+      "senderRole": "student"
+    },
+    {
+      "id": "msg_yn3hf0h3l",
+      "createdAt": "2026-06-23T19:12:50.779Z",
+      "message": "hi",
+      "receiverId": "usr_admin",
+      "receiverName": "System Administrator",
+      "receiverRole": "admin",
+      "senderId": "usr_jvksdms14",
+      "senderName": "Md Rifat Hossain",
+      "senderRole": "student"
+    },
+    {
+      "id": "msg_jons9d4aw",
+      "createdAt": "2026-06-23T19:17:41.928Z",
+      "message": "hi",
+      "receiverId": "usr_jvksdms14",
+      "receiverName": "Md Rifat Hossain",
+      "receiverRole": "student",
+      "senderId": "usr_d019uld6i",
+      "senderName": "Arpita Saha Chaity",
+      "senderRole": "student"
+    },
+    {
+      "id": "msg_np69pjpi3",
+      "createdAt": "2026-06-23T19:17:47.246Z",
+      "message": "hi sir",
+      "receiverId": "usr_admin",
+      "receiverName": "System Administrator",
+      "receiverRole": "admin",
+      "senderId": "usr_d019uld6i",
+      "senderName": "Arpita Saha Chaity",
+      "senderRole": "student"
+    },
+    {
+      "id": "msg_hnhaknstk",
+      "createdAt": "2026-06-23T19:18:00.596Z",
+      "message": "hello",
+      "receiverId": "usr_d019uld6i",
+      "receiverName": "Arpita Saha Chaity",
+      "receiverRole": "student",
+      "senderId": "usr_admin",
+      "senderName": "System Administrator",
+      "senderRole": "admin"
+    },
+    {
+      "id": "msg_40cijw0zp",
+      "createdAt": "2026-06-23T19:28:18.327Z",
+      "message": "hlw",
+      "receiverId": "usr_d019uld6i",
+      "receiverName": "Arpita Saha Chaity",
+      "receiverRole": "student",
+      "senderId": "usr_jvksdms14",
+      "senderName": "Md Rifat Hossain",
+      "senderRole": "student"
+    }
+  ]
+}

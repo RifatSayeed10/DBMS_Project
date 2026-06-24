@@ -1,0 +1,6 @@
+{
+  "name": "Research Archive",
+  "description": "A comprehensive collaborative portal and directory for papers, topics, and researcher profiles with secure bookmarks.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
