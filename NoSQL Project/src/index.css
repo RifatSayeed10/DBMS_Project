@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Configure base colors to be customized in dark mode using CSS variables */
+  --color-slate-50: var(--slate-50, #f8fafc);
+  --color-slate-100: var(--slate-100, #f1f5f9);
+  --color-slate-200: var(--slate-200, #e2e8f0);
+  --color-slate-300: var(--slate-300, #cbd5e1);
+  --color-slate-400: var(--slate-400, #94a3b8);
+  --color-slate-500: var(--slate-500, #64748b);
+  --color-slate-600: var(--slate-600, #475569);
+  --color-slate-700: var(--slate-700, #334155);
+  --color-slate-800: var(--slate-800, #1e293b);
+  --color-slate-900: var(--slate-900, #0f172a);
+  --color-slate-950: var(--slate-950, #020617);
+
+  /* Redefining Violet to Premium Emerald Green (to avoid violet/blue) */
+  --color-violet-50: var(--violet-50, #f0fdf4);
+  --color-violet-100: var(--violet-100, #dcfce7);
+  --color-violet-200: var(--violet-200, #bbf7d0);
+  --color-violet-300: var(--violet-300, #86efac);
+  --color-violet-400: var(--violet-400, #4ade80);
+  --color-violet-500: var(--violet-500, #10b981);
+  --color-violet-650: var(--violet-650, #059669);
+  --color-violet-700: var(--violet-700, #047857);
+  --color-violet-800: var(--violet-800, #065f46);
+  --color-violet-900: var(--violet-900, #064e3b);
+  --color-violet-950: var(--violet-950, #022c22);
+
+  /* Redefining Indigo to Deep Mint & Sage (to avoid violet/blue) */
+  --color-indigo-50: var(--indigo-50, #f0fdfa);
+  --color-indigo-100: var(--indigo-100, #ccfbf1);
+  --color-indigo-200: var(--indigo-200, #99f6e4);
+  --color-indigo-300: var(--indigo-300, #5eead4);
+  --color-indigo-400: var(--indigo-400, #2dd4bf);
+  --color-indigo-500: var(--indigo-500, #14b8a6);
+  --color-indigo-600: var(--indigo-600, #0d9488);
+  --color-indigo-700: var(--indigo-700, #0f766e);
+  --color-indigo-800: var(--indigo-800, #115e59);
+  --color-indigo-900: var(--indigo-900, #134e4a);
+  --color-indigo-950: var(--indigo-950, #042f2e);
+
+  /* Redefining Blue to Forest Teal (to avoid violet/blue) */
+  --color-blue-50: var(--blue-50, #ebf5f1);
+  --color-blue-100: var(--blue-100, #d1e9e0);
+  --color-blue-200: var(--blue-200, #a5d6c4);
+  --color-blue-300: var(--blue-300, #79bfa7);
+  --color-blue-400: var(--blue-400, #50a88a);
+  --color-blue-500: var(--blue-500, #2d8f6d);
+  --color-blue-600: var(--blue-600, #227759);
+  --color-blue-700: var(--blue-700, #1a6047);
+  --color-blue-800: var(--blue-800, #134d38);
+  --color-blue-900: var(--blue-900, #0d3a2a);
+  --color-blue-950: var(--blue-950, #061d15);
+
+  --color-white: var(--white-custom, #ffffff);
+
+  /* Map brand colors back to beautiful emerald */
+  --color-brand-50: var(--color-violet-50);
+  --color-brand-100: var(--color-violet-100);
+  --color-brand-200: var(--color-violet-200);
+  --color-brand-300: var(--color-violet-300);
+  --color-brand-400: var(--color-violet-400);
+  --color-brand-500: var(--color-violet-650);
+  --color-brand-600: var(--color-violet-700);
+  --color-brand-700: var(--color-violet-800);
+  --color-brand-800: var(--color-violet-900);
+  
+  /* Map stone colors back to slate */
+  --color-stone-50: var(--color-slate-50);
+  --color-stone-100: var(--color-slate-100);
+  --color-stone-150: var(--color-slate-200);
+  --color-stone-200: var(--color-slate-200);
+  --color-stone-250: var(--color-slate-300);
+  --color-stone-300: var(--color-slate-300);
+  --color-stone-400: var(--color-slate-400);
+  --color-stone-450: var(--color-slate-500);
+  --color-stone-500: var(--color-slate-500);
+  --color-stone-600: var(--color-slate-600);
+  --color-stone-700: var(--color-slate-700);
+  --color-stone-800: var(--color-slate-800);
+  --color-stone-850: var(--color-slate-800);
+  --color-stone-900: var(--color-slate-900);
+  --color-stone-950: var(--color-slate-950);
+
+  /* Restore smooth curved visual architecture */
+  --radius-sm: 1.5rem; /* rounded-3xl mapping */
+  --radius-xs: 0.75rem; /* rounded-xl mapping */
+  --radius-2xs: 0.5rem; /* rounded-lg mapping */
+}
+
+/* Define Dark Mode custom properties */
+.dark {
+  --slate-50: #0b0f19;      /* Ultra deep slate-black for page bg */
+  --slate-100: #141b2d;     /* Deep slate for card-level containers */
+  --slate-200: #1f293d;     /* Medium dark slate for borders, inputs, light cards */
+  --slate-300: #2d3b55;     /* Dark accent borders */
+  --slate-400: #475a7c;     /* Muted text / helper icon colors */
+  --slate-500: #647da3;     /* Muted secondary text */
+  --slate-600: #94a9c9;     /* Secondary readable text */
+  --slate-700: #cbdcf2;     /* High readability text */
+  --slate-800: #e2ecf8;     /* Light gray/blue text */
+  --slate-900: #f1f6fc;     /* Heading / primary text */
+  --slate-950: #ffffff;     /* Highlight / extreme white text */
+
+  /* Violet Dark mode override to Deep Mint/Emerald Forest */
+  --violet-50: #041d14;     /* Deep dark green tint for brand container bg */
+  --violet-100: #082d20;    /* Brand accent secondary bg */
+  --violet-200: #0c3e2d;
+  --violet-300: #11503c;
+  --violet-400: #17644d;
+  --violet-500: #259a77;    /* Bright neon-emerald for primary brand indicators */
+  --violet-650: #34b58e;    /* Lighter emerald to be highly visible on dark backgrounds */
+  --violet-700: #54ccaa;    /* Soft emerald hover state */
+  --violet-800: #7ae0c4;
+  --violet-900: #a7f3de;
+  --violet-950: #d4faf0;
+
+  /* Indigo Dark mode override to Teal/Sage Forest */
+  --indigo-50: #031a18;
+  --indigo-100: #062c28;
+  --indigo-200: #0a3d37;
+  --indigo-300: #0f4e47;
+  --indigo-400: #145f56;
+  --indigo-500: #197f74;
+  --indigo-600: #2aa195;
+  --indigo-700: #4ec0b4;
+  --indigo-800: #79dad0;
+  --indigo-900: #abf0e8;
+  --indigo-950: #d5fbf6;
+
+  /* Blue Dark mode override to Forest Teal */
+  --blue-50: #031c15;
+  --blue-100: #082d22;
+  --blue-200: #0e3f30;
+  --blue-300: #14503e;
+  --blue-400: #1b614c;
+  --blue-500: #288a6d;
+  --blue-600: #3ba887;
+  --blue-700: #5ec2a3;
+  --blue-800: #84dbc1;
+  --blue-900: #acf2dd;
+  --blue-950: #d6fbf1;
+
+  --white-custom: #141b2d;  /* ALL elements styled with `bg-white` (e.g. cards, header, forms) instantly turn dark slate! */
+}
